@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Замовлення</title>
+</head>
+<body>
+  <form>
+    <a>Ім'я: <input type="text" name="fname" required></a><br>
+    <a>Прізвище: <input type="text" name="lname" required></a><br>
+    <a>Email: <input type="email" name="email" required></a><br>
+    <a>Телефон: <input type="tel" name="phone" required></a><br>
+    <a>Кількість: <input type="number" name="quantity" min="1" max="10" required></a><br>
+    <a>Адреса: <input type="text" name="address" minlength="10" required></a><br>
+
+    Доставка:<br>
+    <input type="radio" name="delivery" value="Самовивіз" required> Самовивіз<br>
+    <input type="radio" name="delivery" value="Поштомат"> Поштомат<br>
+    <input type="radio" name="delivery" value="Кур'єр"> Кур'єр<br>
+
+    Опції:<br>
+    <input type="checkbox" name="opt" value="Упаковка"> Подарункова упаковка<br>
+    <input type="checkbox" name="opt" value="Гарантія"> Додаткова гарантія<br>
+    <input type="checkbox" name="opt" value="SMS"> SMS<br>
+    <input type="checkbox" name="opt" value="Дзвінок"> Дзвінок перед доставкою<br>
+
+    Оплата:
+    <select name="payment" required>
+      <option value="">--Оберіть--</option>
+      <option>Картка</option>
+      <option>При отриманні</option>
+      <option>Переказ</option>
+    </select><br>
+
+    Коментар:<br>
+    <textarea name="comment" maxlength="200"></textarea><br>
+
+    <input type="submit" value="Відправити">
+  </form>
+</body>
+</html>
